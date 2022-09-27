@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCESOTOTAL | Tu ticket de entrada al evento que querés</title>
+    <link rel="shortcut icon" href="./images/tab_logo.png">
+    <link rel="apple-touch-icon" href="./images/tab_logo.png">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="#" id="accesototal">ACCESOTOTAL</a>
+            <a href="#contenedor-sign-in" id="sign-in-header"><i class="fa fa-sign-in"></i><span>Iniciar sesión</span></a>
+            <a href="" id="sign-out-header" class="hidden"><i class="fa fa-sign-out"></i><span>Cerrar sesión</span></a>
+            <a href="#contenedor-carrito" id="btn-carrito-header"><i class="fa fa-shopping-cart" id="carrito-header"></i></a>
+        </nav>
+    </header>
+
+    <section id="slider">
+        <img class="mySlides" src="./images/banner_dua_lipa.png" />
+        <img class="mySlides" src="./images/banner_imagine_dragons.png" />
+        <img class="mySlides" src="./images/banner_lollapalooza.png" />
+        <img class="mySlides" src="./images/banner_primavera_sound.png" />
+    </section>
+
+    <div id="contenedor-filtro">
+        <input type="text" name="filtro" id="filtro" placeholder="Buscar..." size="60">
+    </div>
+
+    <main class="contenedor">
+        <div id="contenedor-eventos">
+            <div class="card" id="card1">
+                <img src="./images/img_dua_lipa.png" class="imagen-evento" />
+                <h3 class="titulo-evento">DUA LIPA</h3>
+                <p class="venue-fecha-evento">13 y 14 de septiembre @ Campo Argentino de Polo</p>
+                <h5 class="precio-evento">PRECIO: $7000</h5>
+                <p id="ultimas-entradas1"></p>
+                <form>
+                    <label for="entradas1" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas1" class="formulario-entradas" />
+                    <button class="btn-entradas formulario-entradas" type="submit" id="1">Agregar a carrito</button>
+                </form>
+            </div>
+            <div class="card" id="card2">
+                <img src="./images/img_imagine_dragons.webp" class="imagen-evento" />
+                <h3 class="titulo-evento">IMAGINE DRAGONS</h3>
+                <p class="venue-fecha-evento">23 de octubre @ Hipódromo de Palermo</p>
+                <h5 class="precio-evento">PRECIO: $5500</h5>
+                <p id="ultimas-entradas2"></p>
+                <form>
+                    <label for="entradas2" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas2" class="formulario-entradas"/>
+                    <button class="btn-entradas formulario-entradas" type="submit" id="2">Agregar a carrito</button>
+                </form>
+            </div>
+            <div class="card" id="card3">
+                <img src="./images/img_lollapalooza.jfif" class="imagen-evento" />
+                <h3 class="titulo-evento">LOLLAPALOOZA</h3>
+                <p class="venue-fecha-evento">17, 18 y 19 de marzo @ Hipódromo de San Isidro</p>
+                <h5 class="precio-evento">PRECIO: $13500</h5>
+                <p id="ultimas-entradas3"></p>
+                <form>
+                    <label for="entradas3" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas3" class="formulario-entradas"/>
+                    <button class="btn-entradas formulario-entradas" type="submit" id="3">Agregar a carrito</button>
+                </form>
+            </div>
+            <div class="card" id="card4">
+                <img src="./images/img_primavera_sound.png" class="imagen-evento" />
+                <h3 class="titulo-evento">PRIMAVERA SOUND</h3>
+                <p class="venue-fecha-evento">Noviembre @ Costanera Sur</p>
+                <h5 class="precio-evento">PRECIO: $10300</h5>
+                <p id="ultimas-entradas4"></p>
+                <form>
+                    <label for="entradas4" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas4" class="formulario-entradas"/>
+                    <button class="btn-entradas formulario-entradas" type="submit" id="4">Agregar a carrito</button>
+                </form>
+            </div>
+            <div class="card" id="card5">
+                <img src="./images/img_coti.jpg" class="imagen-evento" />
+                <h3 class="titulo-evento">COTI</h3>
+                <p class="venue-fecha-evento">5 de noviembre @ Teatro Vorterix</p>
+                <h5 class="precio-evento">PRECIO: $2200</h5>
+                <p id="ultimas-entradas5"></p>
+                <form>
+                    <label for="entradas5" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas5" class="formulario-entradas"/>
+                    <button class="btn-entradas formulario-entradas" type="submit" id="5">Agregar a carrito</button>
+                </form>
+            </div>
+            <div class="card" id="card6">
+                <img src="./images/img_harry_styles.png" class="imagen-evento" />
+                <h3 class="titulo-evento">HARRY STYLES</h3>
+                <p class="venue-fecha-evento">3 y 4 de diciembre @ Estadio River Plate</p>
+                <h5 class="precio-evento">PRECIO: $8800</h5>
+                <p id="ultimas-entradas6"></p>
+                <form>
+                    <label for="entradas6" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas6" class="formulario-entradas"/>
+                    <button class="btn-entradas formulario-entradas" type="submit" id="6">Agregar a carrito</button>
+                </form>
+            </div>
+            <div class="card" id="card7">
+                <img src="./images/img_valdes.jpg" class="imagen-evento" />
+                <h3 class="titulo-evento">VALDES</h3>
+                <p class="venue-fecha-evento">23 de octubre @ Niceto Club</p>
+                <h5 class="precio-evento">PRECIO: $1800</h5>
+                <p id="ultimas-entradas7"></p>
+                <form>
+                    <label for="entradas7" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas7" class="formulario-entradas"/>
+                    <button class="btn-entradas formulario-entradas" type="submit" id="7">Agregar a carrito</button>
+                </form>
+            </div>
+            <div class="card" id="card8">
+                <img src="./images/img_rayos_laser.jpg" class="imagen-evento" />
+                <h3 class="titulo-evento">RAYOS LASER</h3>
+                <p class="venue-fecha-evento">14 de octubre @ Niceto Club</p>
+                <h5 class="precio-evento">PRECIO: $1800</h5>
+                <p id="ultimas-entradas8"></p>
+                <form>
+                    <label for="entradas8" class="formulario-entradas">ENTRADAS</label>
+                    <input type="number" value="0" min="0" max="6" id="entradas8" class="formulario-entradas"/>
+                    <button class="btn-entradas formulario-entradas" type="submit" id="8">Agregar a carrito</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="contenedor-carrito" class="hidden">
+            <h3 id="head-carrito">CARRITO DE COMPRAS</h3>
+            <div id="lista-carrito">
+            </div>
+            <h4 id="total-carrito">TOTAL = $0</h4>
+            <button id="btn-confirmar-carrito">Confirmar carrito</button>
+        </div>
+
+        <div id="contenedor-sign-in" class="hidden">
+            <form id="formulario-sign-in">
+                <div>
+                    <label for="usuario" class="formulario-sign-in">Usuario</label>
+                    <br>
+                    <input type="text" id="usuario" size="30" class="formulario-sign-in" required>
+                </div>
+                <div>
+                    <label for="pass" class="formulario-sign-in">Contraseña</label>
+                    <br>
+                    <input type="password" id="pass" size="30" class="formulario-sign-in" required>
+                </div>
+                <button id="btn-sign-in" class="formulario-sign-in">Ingresar</button>
+                <button id="btn-registro" class="formulario-sign-in">Registrarse</button>
+            </form>
+        </div>
+
+        <div id="contenedor-pago" class="hidden">
+            <form id="formulario-pago">
+                <div>
+                    <label>Modo de pago:</label>
+                </div>
+                <div>
+                    <input type="radio" name="modo-de-pago" id="contado" value="contado" checked="checked" required> Contado   
+                    <input type="radio" name="modo-de-pago" id="3-cuotas" value="3-cuotas"> 3 cuotas   
+                    <input type="radio" name="modo-de-pago" id="6-cuotas" value="6-cuotas"> 6 cuotas   
+                    <input type="radio" name="modo-de-pago" id="12-cuotas" value="12-cuotas"> 12 cuotas   
+                </div>
+                <div>
+                    <label for="tarjeta_prov">Proveedor de la tarjeta: </label>
+                </div>
+                <div>    
+                    <input type="radio" name="tarjeta_prov" id="amex" value="AMEX" checked="checked" required> AMEX
+                    <input type="radio" name="tarjeta_prov" id="visa" value="VISA"> VISA
+                    <input type="radio" name="tarjeta_prov" id="mastercard" value="MASTERCARD"> MasterCard
+                </div>
+                <div>
+                    <label for="tarjeta_num">Número de tarjeta: </label>
+                    <input type="text" name="tarjeta_num" id="tarjeta_num" size="30" maxlength="16" required>
+                    <p id="mensaje-tarjeta-num" class="hidden aviso-pago">El número de tarjeta se compone de 16 dígitos.</p>
+                </div>
+                <div>
+                    <label for="tarjeta_nomb">Nombre en la tarjeta: </label>
+                    <input type="text" name="tarjeta_nomb" id="tarjeta_nomb" size="30" required>
+                    <p id="mensaje-tarjeta-nomb" class="hidden aviso-pago">Ingresá un nombre válido, de al menos 9 caracteres.</p>
+                </div>
+                <div>
+                    <label for="tarjeta_cvv">Código de seguridad: </label>
+                    <input type="password" name="tarjeta_cvv" id="tarjeta_cvv" maxlength="4" size="5" required>
+                    <p id="mensaje-tarjeta-cvv-amex" class="hidden aviso-pago">El código de seguridad de la tarjeta se compone de 4 dígitos.</p>
+                    <p id="mensaje-tarjeta-cvv-no-amex" class="hidden aviso-pago">El código de seguridad de la tarjeta se compone de 3 dígitos.</p>
+                </div>
+                <button id="btn-confirmar-compra">Confirmar compra</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="clima"></div>
+        <p id="firma">por fedeeribeiro</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

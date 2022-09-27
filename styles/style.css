@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    padding: 1rem;
+    background-color: #222;
+    width: 100%;
+    position: fixed;
+    text-align: right;
+    top: 0px;
+    color: white;
+    text-decoration: none;
+}
+
+#accesototal{
+    margin: 0px 10px;
+    transition: text-shadow 0.3s ease;
+    transition: transform 0.3s;
+    color: white;
+    text-decoration: none;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: bolder;
+    float: left;
+}
+#accesototal:hover {
+    text-shadow: 0 0 0.1rem white;
+    transform: scale(1.02);
+}
+
+#carrito-header{
+    margin: 0px 10px;
+    transition: text-shadow 0.3s ease;
+    transition: transform 1s;
+    font-size: 20px;
+    color: white;
+}
+
+#carrito-header:hover{
+    text-shadow: 0 0 0.1rem white;
+    transform: rotate(360deg);
+}
+
+#sign-in-header, #sign-out-header{
+    margin: 0px 10px;
+    transition: text-shadow 0.3s ease;
+    font-size: 20px;
+    color: white;
+    background: none;
+	border: none;
+	padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+	outline: inherit;
+}
+
+span{
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 0.2rem;
+}
+
+#sign-in-header:hover, #sign-out-header:hover{
+    text-shadow: 0 0 0.1rem white;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+}
+
+body {
+    background-color: #2B2D42;
+    color: white;
+}
+
+input{
+    padding-left: 0.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+#slider{
+    margin-top: 3rem;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+#contenedor-eventos {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    overflow: hidden;
+}
+
+.card:hover{
+    box-shadow: 0 0 1rem rgba(214, 214, 214, 0.3);
+}
+
+.imagen-evento {
+    min-width: 214;
+    object-position: center;
+}
+
+.titulo-evento, .precio-evento{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.venue-fecha-evento{
+    font-size: 0.7rem;
+}
+
+.ultimas-entradas{
+    font-size: 0.7rem;
+    color: red;
+}
+
+.formulario-entradas{
+    object-position: center;
+    border: none;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.aviso{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: red;
+    font-size: 1rem;
+}
+
+.btn-entradas, #btn-confirmar-carrito , #btn-sign-in, #btn-registro, #btn-confirmar-compra{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.btn-entradas:hover, #btn-confirmar-carrito:hover, #btn-sign-in:hover, #btn-registro:hover, #btn-confirmar-compra:hover{
+    background-color: #222;
+    color: white;
+} 
+
+#contenedor-carrito{
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    overflow: hidden;
+}
+
+#head-carrito{
+    margin-bottom: 0.5rem;
+}
+
+#total-carrito{
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.texto-pedido{
+    margin: 0.2rem;
+}
+
+.btn-eliminar{
+    font-size: 20px;
+    color: red;
+    background: none;
+	border: none;
+	padding: 0;
+    cursor: pointer;
+	outline: inherit;
+}
+
+#contenedor-sign-in, #contenedor-pago {
+    max-width: 450px;
+    align-self: center;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    overflow: hidden;
+}
+
+.formulario-sign-in{
+    object-position: center;
+    border: none;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+#btn-sign-in{
+    margin-bottom: 0rem;
+}
+
+#contenedor-pago div{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#formulario-pago input, #formulario-pago label{
+    object-position: center;
+    border: none;
+    font-size: 1rem;
+}
+
+#btn-confirmar-compra{
+    margin-top: 0.5rem;
+}
+
+#contenedor-filtro{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    overflow: hidden;
+}
+
+#filtro{
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.aviso-pago{
+    color: red;
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+}
+
+.hidden{
+    display: none;
+}
+
+#img-clima{
+    height: 25px;
+    max-width: 25px;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+footer p{
+    text-align: right;
+}
